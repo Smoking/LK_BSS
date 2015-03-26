@@ -1,0 +1,62 @@
+// Base64.h: interface for the CBase64 class.
+//
+//////////////////////////////////////////////////////////////////////
+
+#if !defined(AFX_BASE64_H__01378004_54CC_4BE5_AB28_950234FF4E5C__INCLUDED_)
+#define AFX_BASE64_H__01378004_54CC_4BE5_AB28_950234FF4E5C__INCLUDED_
+
+#if _MSC_VER > 1000
+#pragma once
+#endif // _MSC_VER > 1000
+
+#include <windows.h>
+ 
+class CBase64
+{
+    // Internal bucket class.
+    class TempBucket
+    {
+    public:
+        BYTE         nData[4];
+        BYTE         nSize;
+        void         Clear() { ::ZeroMemory(nData, 4); nSize = 0; };
+    };
+
+    PBYTE                       m_pDBuffer;
+    PBYTE                       m_pEBuffer;
+    DWORD                       m_nDBufLen;
+    DWORD                       m_nEBufLen;
+    DWORD                       m_nDDataLen;
+    DWORD                       m_nEDataLen;
+
+public:
+    CBase64();
+    virtual ~CBase64();
+
+public:
+    virtual void         Encode(const PBYTE, DWORD);
+    virtual void         Decode(const PBYTE, DWORD);
+    virtual void         Encode(LPCSTR sMessage);
+    virtual void         Decode(LPCSTR sMessage);
+
+    virtual LPCSTR     DecodedMessage() const;
+    virtual LPCSTR     EncodedMessage() const;
+
+    virtual void         AllocEncode(DWORD);
+    virtual void         AllocDecode(DWORD);
+    virtual void         SetEncodeBuffer(const PBYTE pBuffer, DWORD nBufLen);
+    virtual void         SetDecodeBuffer(const PBYTE pBuffer, DWORD nBufLen);
+
+protected:
+    virtual void         _EncodeToBuffer(const TempBucket &Decode, PBYTE pBuffer);
+    virtual ULONG         _DecodeToBuffer(const TempBucket &Decode, PBYTE pBuffer);
+    virtual void         _EncodeRaw(TempBucket &, const TempBucket &);
+    virtual void         _DecodeRaw(TempBucket &, const TempBucket &);
+    virtual BOOL         _IsBadMimeChar(BYTE);
+
+    static char         m_DecodeTable[256];
+    static BOOL         m_Init;
+    void                       _Init();
+};
+
+#endif // !defined(AFX_BASE64_H__01378004_54CC_4BE5_AB28_950234FF4E5C__INCLUDED_)

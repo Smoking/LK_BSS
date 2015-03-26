@@ -1,0 +1,912 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\LKBSS.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 LKBSS"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "LKBSS1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 成都老肯科技深圳研发中心 2013",IDC_STATIC,
+                    40,25,166,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_LKBSS_DIALOG DIALOGEX 0, 0, 681, 559
+STYLE WS_POPUP | WS_VISIBLE | WS_CLIPCHILDREN
+EXSTYLE WS_EX_APPWINDOW
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "开始发药",IDC_StartMedicine,479,473,78,34,NOT 
+                    WS_VISIBLE
+    PUSHBUTTON      "停止发药",IDC_StopMedicine,581,473,78,34,NOT WS_VISIBLE
+    PUSHBUTTON      "加药",IDC_AddMedicine,71,473,78,34,NOT WS_VISIBLE
+    PUSHBUTTON      "药品管理",IDC_QueryMedicine,173,473,78,34,NOT 
+                    WS_VISIBLE
+    CONTROL         "",IDC_ACTFXCPU1,"{0051AF37-A877-11D3-83A8-00A024BDBF2B}",
+                    WS_TABSTOP,13,13,21,21
+END
+
+IDD_WorkQueue DIALOGEX 0, 0, 514, 364
+STYLE WS_CHILD
+FONT 12, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "List2",IDC_WorkQueue_LeftList,"SysListView32",
+                    LVS_REPORT | LVS_SINGLESEL | WS_TABSTOP,4,18,139,288,
+                    WS_EX_STATICEDGE
+    CONTROL         "List3",IDC_WorkQueue_RightList,"SysListView32",
+                    LVS_REPORT | LVS_SINGLESEL | WS_TABSTOP,176,18,139,288,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "",IDC_MoveRight,153,128,17,17
+    PUSHBUTTON      "",IDC_MoveLeft,153,181,17,17
+    PUSHBUTTON      "",IDC_MoveUp,153,209,17,17,NOT WS_VISIBLE
+    PUSHBUTTON      "",IDC_MoveDown,153,242,17,17,NOT WS_VISIBLE
+    PUSHBUTTON      "",IDC_Move_Left_All,153,278,17,17,NOT WS_VISIBLE
+    CONTROL         "List2",IDC_LISTMED,"SysListView32",LVS_REPORT | 
+                    WS_TABSTOP,330,107,168,199,WS_EX_STATICEDGE
+    PUSHBUTTON      "",IDC_BUTSTART,69,327,68,25
+    PUSHBUTTON      "",IDC_BUTSTOP,221,327,68,25
+    PUSHBUTTON      "",IDC_BUTBACK,375,327,68,25
+    LTEXT           "发药队列",IDC_STATIC,5,6,49,8
+    LTEXT           "异常队列",IDC_STATIC,179,6,49,8
+    GROUPBOX        "处方明细",IDC_STATGROUP,326,6,181,309,BS_FLAT
+    LTEXT           "患者：",IDC_STATIC,332,30,25,8
+    LTEXT           "性别：",IDC_STATIC,332,50,25,8
+    LTEXT           "年龄：",IDC_STATIC,332,71,25,8
+    LTEXT           "药品列表",IDC_STATIC,332,95,33,8
+    LTEXT           "",IDC_PATIENT,384,30,64,13
+    LTEXT           "",IDC_SEX,384,50,64,13
+    LTEXT           "",IDC_AGE,384,71,64,13
+END
+
+IDD_DEVICEMONITOR DIALOGEX 0, 0, 514, 364
+STYLE WS_CHILD
+FONT 12, "宋体", 0, 0, 0x1
+BEGIN
+    LTEXT           "药槽监控",IDC_STATIC,9,10,33,8
+    COMBOBOX        IDC_COMBO,98,7,49,82,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "缺药",IDC_CHECKLACK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,173,10,32,10
+    CONTROL         "List2",IDC_LISTMED,"SysListView32",LVS_REPORT | 
+                    WS_TABSTOP,7,22,320,287,WS_EX_STATICEDGE
+    CONTROL         "List2",IDC_LISTDEVICE,"SysListView32",LVS_REPORT | 
+                    WS_TABSTOP,342,22,157,287,WS_EX_STATICEDGE
+    LTEXT           "设备监控",IDC_STATIC,341,10,33,8
+    PUSHBUTTON      "",IDC_BUTBACK,221,328,68,25
+    LTEXT           "单元：",IDC_STATIC,73,10,25,8
+    CONTROL         "停用",IDC_CHECKSTOP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,215,10,32,10
+    CONTROL         "未分配",IDC_CHECKEMPORT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,253,10,40,10
+END
+
+IDD_AddMedcine DIALOG DISCARDABLE  0, 0, 449, 306
+STYLE WS_POPUP
+FONT 12, "宋体"
+BEGIN
+    PUSHBUTTON      "",IDC_ExitAdd,211,275,68,25
+    PUSHBUTTON      "开始加药",IDC_StartAdd,145,275,68,25,NOT WS_VISIBLE
+END
+
+IDD_AddMed_InfoZone DIALOGEX 0, 0, 176, 248
+STYLE WS_CHILD
+FONT 12, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "List1",IDC_AddMedList,"SysListView32",LVS_REPORT | 
+                    WS_TABSTOP,4,7,156,231,WS_EX_STATICEDGE
+END
+
+IDD_AddMed_OpZone DIALOG DISCARDABLE  0, 0, 288, 239
+STYLE WS_CHILD
+FONT 12, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "",IDOK,190,27,87,36
+    PUSHBUTTON      "",IDC_Subtract,13,31,29,27
+    PUSHBUTTON      "",IDC_Plus,108,31,29,27
+    EDITTEXT        IDC_EDIT_NUM,49,31,50,29,ES_RIGHT | ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_NUMBER | NOT WS_BORDER
+    PUSHBUTTON      "",IDC_Subtract2,14,86,29,27
+    PUSHBUTTON      "",IDC_Plus2,108,86,29,27
+    EDITTEXT        IDC_EDIT_NUM2,50,86,50,29,ES_RIGHT | ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_NUMBER | NOT WS_BORDER
+    DEFPUSHBUTTON   "",IDOK2,190,82,87,36
+    DEFPUSHBUTTON   "",IDOK3,190,137,87,36
+    PUSHBUTTON      "",IDC_Subtract3,13,141,29,27
+    PUSHBUTTON      "",IDC_Plus3,108,141,29,27
+    EDITTEXT        IDC_EDIT_NUM3,49,141,50,29,ES_RIGHT | ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_NUMBER | NOT WS_BORDER
+    DEFPUSHBUTTON   "",IDOK4,190,192,87,36
+    PUSHBUTTON      "",IDC_Subtract4,14,196,29,27
+    PUSHBUTTON      "",IDC_Plus4,108,196,29,27
+    EDITTEXT        IDC_EDIT_NUM4,50,196,50,29,ES_RIGHT | ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_NUMBER | NOT WS_BORDER
+    PUSHBUTTON      "加满",IDC_FULLFILL1,142,31,47,27
+    PUSHBUTTON      "加满",IDC_FULLFILL2,142,86,47,27
+    PUSHBUTTON      "加满",IDC_FULLFILL3,142,141,47,27
+    PUSHBUTTON      "加满",IDC_FULLFILL4,142,196,47,27
+END
+
+IDD_MessageBox DIALOG DISCARDABLE  0, 0, 246, 151
+STYLE WS_POPUP
+FONT 12, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "",IDOK,42,121,68,25
+    PUSHBUTTON      "",IDCANCEL,143,121,68,25
+    LTEXT           "",IDC_Text,74,29,136,52
+END
+
+IDD_QueryMedicine DIALOGEX 0, 0, 469, 322
+STYLE WS_POPUP | WS_BORDER
+FONT 12, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "",IDB_WatchMed,53,292,68,25
+    DEFPUSHBUTTON   "",IDB_EditMed,157,292,68,25
+    LTEXT           "药品名称：",IDC_STATIC,13,30,41,8
+    CONTROL         "缺药",IDC_CHECKLACKMED,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,169,51,32,10
+    COMBOBOX        IDC_COMBO1,61,28,134,136,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "查询药品",IDC_QueryMed,249,24,57,25
+    CONTROL         "List1",IDC_listMedInfo,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | WS_TABSTOP,13,63,437,206,
+                    WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "",IDC_BUTTON3,351,292,68,25
+    CONTROL         "全选",IDC_CHECKALL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,51,32,10
+    DEFPUSHBUTTON   "",IDB_PanDian,254,292,68,25
+    CONTROL         "停用",IDC_CHECKMEDSTATE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,114,51,32,10
+    CONTROL         "上架",IDC_CHECKBOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,62,51,32,10
+END
+
+IDD_MedicineInfo DIALOG DISCARDABLE  0, 0, 489, 293
+STYLE WS_POPUP
+FONT 12, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT1,78,22,78,12,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_EDIT2,78,40,78,12,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_EDIT11,236,22,83,12,ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT14,236,41,83,12,ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT7,236,59,83,12,ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT15,236,78,83,12,ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT16,236,97,69,12,ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT18,236,116,69,12,ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT19,236,135,69,12,ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT21,236,199,83,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER
+    EDITTEXT        IDC_EDIT3,78,56,78,12,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_EDIT4,78,76,78,12,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_EDIT8,78,97,78,12,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_EDIT20,78,116,78,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER
+    EDITTEXT        IDC_EDIT5,78,134,78,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER
+    EDITTEXT        IDC_EDIT9,78,155,78,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER
+    CONTROL         "启用",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    78,199,32,10
+    CONTROL         "停用",IDC_RADIO6,"Button",BS_AUTORADIOBUTTON,126,199,32,
+                    10
+    EDITTEXT        IDC_EDIT22,236,155,52,12,ES_AUTOHSCROLL | NOT WS_BORDER
+    CONTROL         158,IDC_Slider_Warning,"Static",SS_BITMAP | SS_NOTIFY,78,
+                    223,119,7
+    EDITTEXT        IDC_EDIT17,202,220,19,12,ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT10,78,178,242,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER
+    PUSHBUTTON      "编辑地址",IDC_BUTTON3,378,117,47,18
+    PUSHBUTTON      "盘点",IDC_CLEARLOCATION,435,117,47,18,NOT WS_VISIBLE
+    PUSHBUTTON      "选择图片",IDC_BUTTON6,378,142,50,14
+    DEFPUSHBUTTON   "",IDOK,111,264,68,25
+    PUSHBUTTON      "",IDCANCEL,319,264,68,25
+    LTEXT           "当前药品数量：",IDC_STATIC,171,199,57,8
+    LTEXT           "警告百分比：",IDC_STATIC,17,220,49,8
+    LTEXT           "*药品编码：",IDC_STATIC,16,22,45,8
+    LTEXT           "*药品中文名称：",IDC_STATIC,17,40,61,8
+    LTEXT           "药品英文名称：",IDC_STATIC,17,57,57,8
+    LTEXT           "HIS系统编码：",IDC_STATIC,17,76,53,8
+    LTEXT           "药品规格：",IDC_STATIC,17,96,41,8
+    LTEXT           "单地址最大容量：",IDC_STATIC,171,58,65,8
+    LTEXT           "药品批号：",IDC_STATIC,17,115,41,8
+    LTEXT           "药品状态：",IDC_STATIC,17,198,41,8
+    LTEXT           "摆药单位：",IDC_STATIC,17,155,41,8
+    LTEXT           "生产厂家：",IDC_STATIC,17,178,41,8
+    LTEXT           "拼音编码：",IDC_STATIC,171,22,41,8
+    LTEXT           "自定义编码：",IDC_STATIC,171,41,49,8
+    LTEXT           "药品存放地址：",IDC_STATIC,333,22,57,8
+    CONTROL         "List2",IDC_LIST2,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,331,35,146,75
+    LTEXT           "单次最大发药量：",IDC_STATIC,171,78,65,8
+    LTEXT           "有效日期：",IDC_STATIC,17,134,41,8
+    LTEXT           "药品长度：",IDC_STATIC,171,96,41,8
+    LTEXT           "药品宽度：",IDC_STATIC,171,116,41,8
+    LTEXT           "药品高度：",IDC_STATIC,171,135,41,8
+    LTEXT           "药品图片：",IDC_STATIC,333,145,41,8
+    CONTROL         "",IDC_STATIC12,"Static",SS_BLACKFRAME,331,157,146,94
+    LTEXT           "mm",IDC_STATIC,307,98,9,8
+    LTEXT           "mm",IDC_STATIC,307,117,9,8
+    LTEXT           "mm",IDC_STATIC,307,136,9,8
+    LTEXT           "发药数量：",IDC_STATICMEDCOUNT,171,155,41,8,NOT 
+                    WS_GROUP
+    PUSHBUTTON      "开始",IDC_BUTTON7,294,154,31,14
+END
+
+IDD_LogViewer DIALOG DISCARDABLE  0, 0, 430, 271
+STYLE WS_POPUP
+FONT 12, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "",IDOK,176,241,68,25
+    LTEXT           "日期选择：",IDC_STATIC,23,27,41,8
+    PUSHBUTTON      "查看日志",IDB_ViewLog,158,21,50,22
+    CONTROL         "List1",IDC_listLogRecord,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,11,53,403,169
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,67,25,71,13
+END
+
+IDD_Setting_BasicSetting DIALOG DISCARDABLE  0, 0, 280, 190
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    LTEXT           "发药扫描频率(ms)：",IDC_STATIC,32,53,71,8
+    LTEXT           "日志参数配置文件：",IDC_STATIC,32,36,73,8
+    EDITTEXT        IDC_EDT_log,107,30,80,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_dealFrequency,107,47,40,14,ES_AUTOHSCROLL
+    GROUPBOX        "设置系统基本参数",IDC_grp_caption,7,7,266,176
+    CONTROL         "药品有效期控制",IDC_CHK_medValidate,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,32,70,72,10
+END
+
+IDD_Setting_PLC DIALOG DISCARDABLE  0, 0, 280, 190
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    LTEXT           "IP：",IDC_STATIC,52,34,16,8
+    LTEXT           "站号：",IDC_STATIC,52,51,25,8
+    LTEXT           "连接超时(ms)：",IDC_STATIC,52,68,55,8
+    EDITTEXT        IDC_EDT_IP,109,28,65,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_stationNum,109,45,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_conTimeOut,109,62,40,14,ES_AUTOHSCROLL
+    GROUPBOX        "设置PLC参数",IDC_grp_caption,7,7,266,176
+END
+
+IDD_Setting_Printer DIALOG DISCARDABLE  0, 0, 280, 190
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    LTEXT           "打印机串口：",IDC_STATIC,46,32,49,8
+    LTEXT           "波特率：",IDC_STATIC,61,48,33,8
+    LTEXT           "热敏打印纸宽：",IDC_STATIC,38,61,57,8
+    LTEXT           "打印机串口：",IDC_STATIC,44,121,49,8
+    LTEXT           "波特率：",IDC_STATIC,52,137,33,8
+    EDITTEXT        IDC_EDT_ThermalPrtPort,95,26,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_ThermalPrtBaud,95,42,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_ThermalPrtPaper,95,60,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_SatoPrtPort,95,115,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_SatoPrtBaud,95,131,40,14,ES_AUTOHSCROLL
+    GROUPBOX        "热敏打印机",IDC_grp_caption,7,7,266,78,WS_GROUP
+    GROUPBOX        "热转打印机",IDC_grp_caption2,7,89,266,94
+END
+
+IDD_Setting_SysMonitor DIALOG DISCARDABLE  0, 0, 280, 190
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    LTEXT           "药盒监控频率(ms)：",IDC_STATIC,31,36,71,8
+    LTEXT           "设备监控频率(ms)：",IDC_STATIC,31,54,71,8
+    EDITTEXT        IDC_EDT_BoxFrequency,106,30,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_DeviceFrequency,106,50,40,14,ES_AUTOHSCROLL
+    GROUPBOX        "设置系统监控频率",IDC_grp_caption,7,7,266,176
+END
+
+IDD_Setting_Database DIALOG DISCARDABLE  0, 0, 280, 190
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    LTEXT           "服务器IP：",IDC_STATIC,20,38,40,8
+    LTEXT           "用户名：",IDC_STATIC,20,55,33,8
+    LTEXT           "密码：",IDC_STATIC,20,72,25,8
+    LTEXT           "数据库名：",IDC_STATIC,144,38,41,8
+    LTEXT           "端口：",IDC_STATIC,144,55,25,8
+    EDITTEXT        IDC_EDT_server,60,32,63,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_user,60,49,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_psw,60,66,40,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_database,185,32,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_port,185,49,40,14,ES_AUTOHSCROLL
+    LTEXT           "字符集：",IDC_STATIC,144,72,33,8
+    COMBOBOX        IDC_CMB_characterSet,185,68,40,71,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "设置数据库参数",IDC_grp_caption,7,7,266,176
+END
+
+IDD_CheckNeed DIALOG DISCARDABLE  0, 0, 283, 242
+STYLE WS_POPUP
+FONT 12, "宋体"
+BEGIN
+    CONTROL         "全选",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    25,17,32,10
+    PUSHBUTTON      "立即加药",IDOK,49,215,60,23
+    PUSHBUTTON      "稍后再加",IDCANCEL,175,214,60,23
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,21,27,238,164
+END
+
+IDD_Setting_ResetDefault DIALOG DISCARDABLE  0, 0, 281, 190
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "恢复为默认设置",IDOK,149,63,63,22
+    DEFPUSHBUTTON   "保存为默认设置",ID_save,56,63,63,22
+    GROUPBOX        "默认设置",IDC_grp_caption,7,7,267,176
+END
+
+IDD_Keyboard DIALOG DISCARDABLE  0, 0, 506, 191
+STYLE WS_POPUP
+FONT 12, "System"
+BEGIN
+    DEFPUSHBUTTON   "关闭",IDOK,228,161,68,25
+    PUSHBUTTON      "Q",IDC_BUTTON1,7,20,34,28
+    PUSHBUTTON      "W",IDC_BUTTON2,45,20,34,28
+    PUSHBUTTON      "E",IDC_BUTTON8,83,20,34,28
+    PUSHBUTTON      "R",IDC_BUTTON10,122,20,34,28
+    PUSHBUTTON      "T",IDC_BUTTON11,160,20,34,28
+    PUSHBUTTON      "Y",IDC_BUTTON12,198,20,34,28
+    PUSHBUTTON      "U",IDC_BUTTON13,235,20,34,28
+    PUSHBUTTON      "I",IDC_BUTTON14,273,20,34,28
+    PUSHBUTTON      "O",IDC_BUTTON15,310,20,34,28
+    PUSHBUTTON      "P",IDC_BUTTON16,347,20,34,28
+    PUSHBUTTON      "A",IDC_BUTTON5,7,55,34,28
+    PUSHBUTTON      "S",IDC_BUTTON6,45,55,34,28
+    PUSHBUTTON      "D",IDC_BUTTON20,83,55,34,28
+    PUSHBUTTON      "F",IDC_BUTTON21,122,55,34,28
+    PUSHBUTTON      "G",IDC_BUTTON22,160,55,34,28
+    PUSHBUTTON      "H",IDC_BUTTON23,198,55,34,28
+    PUSHBUTTON      "J",IDC_BUTTON24,235,55,34,28
+    PUSHBUTTON      "K",IDC_BUTTON25,273,55,34,28
+    PUSHBUTTON      "L",IDC_BUTTON26,7,90,34,28
+    PUSHBUTTON      "Backspace",IDC_BUTTON27,310,55,70,28
+    PUSHBUTTON      "Z",IDC_BUTTON28,45,90,34,28
+    PUSHBUTTON      "X",IDC_BUTTON29,83,90,34,28
+    PUSHBUTTON      "C",IDC_BUTTON30,121,90,34,28
+    PUSHBUTTON      "V",IDC_BUTTON31,160,90,34,28
+    PUSHBUTTON      "B",IDC_BUTTON32,198,90,34,28
+    PUSHBUTTON      "N",IDC_BUTTON33,235,90,34,28
+    PUSHBUTTON      "M",IDC_BUTTON34,273,90,34,28
+    PUSHBUTTON      "←",IDC_BUTTON35,273,124,34,28,NOT WS_VISIBLE
+    PUSHBUTTON      "↑",IDC_BUTTON36,310,90,34,28,NOT WS_VISIBLE
+    PUSHBUTTON      "Enter",IDC_BUTTON37,347,90,34,28,NOT WS_VISIBLE
+    PUSHBUTTON      "7",IDC_BUTTON38,391,20,34,28
+    PUSHBUTTON      "8",IDC_BUTTON39,428,20,34,28
+    PUSHBUTTON      "9",IDC_BUTTON40,465,20,34,28
+    PUSHBUTTON      "4",IDC_BUTTON41,391,55,34,28
+    PUSHBUTTON      "5",IDC_BUTTON42,428,55,34,28
+    PUSHBUTTON      "6",IDC_BUTTON43,465,55,34,28
+    PUSHBUTTON      "1",IDC_BUTTON44,391,90,34,28
+    PUSHBUTTON      "2",IDC_BUTTON45,428,90,34,28
+    PUSHBUTTON      "3",IDC_BUTTON46,465,90,34,28
+    PUSHBUTTON      "",IDC_BUTTON47,27,124,224,28
+    PUSHBUTTON      "↓",IDC_BUTTON48,310,124,34,28,NOT WS_VISIBLE
+    PUSHBUTTON      "→",IDC_BUTTON49,347,124,34,28,NOT WS_VISIBLE
+    PUSHBUTTON      "0",IDC_BUTTON50,391,124,34,28
+    PUSHBUTTON      ".",IDC_BUTTON51,428,124,70,28
+END
+
+IDD_MedLocationEditor DIALOG DISCARDABLE  0, 0, 295, 257
+STYLE WS_POPUP
+FONT 12, "宋体"
+BEGIN
+    PUSHBUTTON      "",IDOK,106,226,68,25
+    LTEXT           "已分配地址：",IDC_STATIC,43,27,48,8
+    COMBOBOX        IDC_COMBO1,101,25,70,186,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "删除",IDC_BUTTON1,174,24,50,14
+    LTEXT           "未分配地址：",IDC_STATIC,43,60,53,8
+    COMBOBOX        IDC_COMBO2,101,59,70,147,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "新增",IDC_BUTTON2,174,58,50,14
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,39,89,185,118
+    PUSHBUTTON      "启用",IDC_BUTOPEN,231,122,50,21
+    PUSHBUTTON      "停用",IDC_BUTSTOP,231,162,50,21
+END
+
+IDD_SysSetting DIALOG DISCARDABLE  0, 0, 334, 239
+STYLE WS_POPUP
+FONT 10, "System"
+BEGIN
+    CONTROL         "Tree1",IDC_TREEGROUP,"SysTreeView32",TVS_FULLROWSELECT | 
+                    WS_TABSTOP,0,12,53,191
+    PUSHBUTTON      "关  闭",IDC_CANCEL,195,209,58,25
+    PUSHBUTTON      "确  定",IDC_OK,102,209,58,25
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "LKBSS Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "LKBSS\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2009\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "LKBSS.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "LKBSS 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_LKBSS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 507
+    END
+
+    IDD_WorkQueue, DIALOG
+    BEGIN
+        HORZGUIDE, 2
+    END
+
+    IDD_DEVICEMONITOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 510
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 359
+    END
+
+    IDD_AddMedcine, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+    END
+
+    IDD_AddMed_InfoZone, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 169
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 244
+    END
+
+    IDD_AddMed_OpZone, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 281
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 232
+    END
+
+    IDD_MessageBox, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 229
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 118
+    END
+
+    IDD_QueryMedicine, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 461
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 317
+    END
+
+    IDD_MedicineInfo, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 482
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 289
+    END
+
+    IDD_LogViewer, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 423
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 268
+    END
+
+    IDD_Setting_BasicSetting, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 273
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 183
+    END
+
+    IDD_Setting_PLC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 273
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 183
+    END
+
+    IDD_Setting_Printer, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 273
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 183
+    END
+
+    IDD_Setting_SysMonitor, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 273
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 183
+    END
+
+    IDD_Setting_Database, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 273
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 183
+    END
+
+    IDD_CheckNeed, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 3
+    END
+
+    IDD_Setting_ResetDefault, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 274
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 183
+    END
+
+    IDD_Keyboard, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+    END
+
+    IDD_MedLocationEditor, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 288
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 253
+    END
+
+    IDD_SysSetting, DIALOG
+    BEGIN
+        RIGHTMARGIN, 327
+        TOPMARGIN, 11
+        BOTTOMMARGIN, 234
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "操  作"
+    BEGIN
+        MENUITEM "发      药",                  IDM_SendMed
+        MENUITEM "加      药",                  IDM_AddMedicine
+        MENUITEM "重启系统",                    IDM_Reboot
+        MENUITEM "退出系统",                    IDM_LogOut
+    END
+    POPUP "管  理"
+    BEGIN
+        MENUITEM "药品管理",                    IDM_MedManage
+        MENUITEM "监      控",                  IDM_Monitor
+    END
+    POPUP "辅助功能"
+    BEGIN
+        MENUITEM "查询日志",                    IDM_QueryLog
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_SL_CHANNEL          BITMAP  DISCARDABLE     "res\\channel.bmp"
+IDB_SL_CHANNEL_ACTIVE   BITMAP  DISCARDABLE     "res\\channel_active.bmp"
+IDB_SL_THUMB            BITMAP  DISCARDABLE     "res\\thumb.bmp"
+IDB_SL_THUMB_ACTIVE     BITMAP  DISCARDABLE     "res\\thumb_active.bmp"
+IDB_COLUMNHEADER_SPAN   BITMAP  DISCARDABLE     "res\\ColumnHeaderSpan.bmp"
+IDB_COLUMNHEADER_START  BITMAP  DISCARDABLE     "res\\ColumnHeaderStart.bmp"
+IDB_COLUMNHEADER_END    BITMAP  DISCARDABLE     "res\\ColumnHeaderEnd.bmp"
+IDB_HORIZONTAL_SCROLLBAR_RIGHTARROW BITMAP  DISCARDABLE     "res\\HorizontalScrollBarRightArrow.bmp"
+IDB_HORIZONTAL_SCROLLBAR_SPAN BITMAP  DISCARDABLE     "res\\HorizontalScrollBarSpan.bmp"
+IDB_HORIZONTAL_SCROLLBAR_LEFTARROW BITMAP  DISCARDABLE     "res\\HorizontalScrollBarLeftArrow.bmp"
+IDB_VERTICLE_SCROLLBAR_UPARROW BITMAP  DISCARDABLE     "res\\VerticleScrollBarUpArrow.bmp"
+IDB_VERTICLE_SCROLLBAR_SPAN BITMAP  DISCARDABLE     "res\\VerticleScrollBarSpan.bmp"
+IDB_VERTICLE_SCROLLBAR_THUMB BITMAP  DISCARDABLE     "res\\VerticleScrollBarThumb.bmp"
+IDB_VERTICLE_SCROLLBAR_DOWNARROW BITMAP  DISCARDABLE     "res\\VerticleScrollBarDownArrow.bmp"
+IDB_VERTICLE_SCROLLBAR_TOP BITMAP  DISCARDABLE     "res\\VerticleScrollbarTop.bmp"
+IDB_VERTICLE_SCROLLBAR_BOTTOM BITMAP  DISCARDABLE     "res\\VerticleScrollbarBottom.bmp"
+IDB_HORIZONTAL_SCROLLBAR_THUMB BITMAP  DISCARDABLE     "res\\HorizontalScrollBarThumb.bmp"
+IDB_FOLDER_TITLE_BK     BITMAP  DISCARDABLE     "res\\folder_title_bk.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_Setting_Database DLGINIT
+BEGIN
+    IDC_CMB_characterSet, 0x403, 7, 0
+0x616c, 0x6974, 0x316e, "\000" 
+    IDC_CMB_characterSet, 0x403, 7, 0
+0x6267, 0x3332, 0x3231, "\000" 
+    IDC_CMB_characterSet, 0x403, 4, 0
+0x6267, 0x006b, 
+    IDC_CMB_characterSet, 0x403, 5, 0
+0x7475, 0x3866, "\000" 
+    IDC_CMB_characterSet, 0x403, 7, 0
+0x6962, 0x616e, 0x7972, "\000" 
+    0
+END
+
+IDD_LKBSS_DIALOG DLGINIT
+BEGIN
+    IDC_ACTFXCPU1, 0x376, 46, 0
+0x0000, 0x0000, 0x0300, 0x0000, 0x034f, 0x0000, 0x034f, 0x0000, 0x0003, 
+0x0208, 0x0000, 0x0003, 0x0001, 0x0000, 0x0003, 0x0008, 0x0000, 0x0003, 
+0x2710, 0x0000, 0x0003, 0x9600, 0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\LKBSS.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 LKBSS(&A)..."
+    IDS_DialogRes           "LKSkinRes\\LKDialogRes"
+    IDS_MedPictureRes       "LKMedicinePicture"
+    IDS_Caption             "LKBSS"
+    IDS_LogOff              "确定注销当前用户吗？"
+    IDS_StopDistrubting     "确认停止发药？"
+    IDS_StartDistrubting    "确认开始发药?"
+    IDS_LocationUsable      "启用"
+    IDS_LocationDisable     "停用"
+    IDS_HIS                 "HIS用户"
+    IDS_OPERATOR            "操作员"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ADMINISTRATOR       "系统管理员"
+    IDS_SUPER_ADMINISTRATOR "超级管理员"
+    IDS_Setting             "     设        置"
+    IDS_BasicSetting        "基本设置"
+    IDS_PLC                 "PLC"
+    IDS_Database            "数据库"
+    IDS_Print               "打印机"
+    IDS_SysMonitor          "系统监控"
+    IDS_erPswConfirm        "两次输入密码不一样！"
+    IDS_erInfo              "请填写完整的信息！"
+    IDS_errAddUser          "用户创建失败！"
+    IDS_erUserExisted       "用户已经存在！"
+    IDS_Failed              "操作失败！"
+    IDS_DeleteConfirm       "确定删除吗?"
+    IDS_NoIKey              "请插入需要绑定的iKEY！"
+    IDS_Tablet              "片剂"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_Box                 "盒剂"
+    IDS_Injection           "注射剂"
+    IDS_Other               "其他"
+    IDS_Pre_ST_unsettled    "未处理"
+    IDS_Pre_ST_settled      "成功处理"
+    IDS_Pre_ST_failed       "处理失败"
+    IDS_Pre_SC_HIS          "HIS"
+    IDS_Pre_SC_manual       "手工录入"
+    IDS_Pre_SC_batch        "批量导入"
+    IDS_Pre_Type_other      "其他"
+    IDS_Pre_Type_clinic     "门诊"
+    IDS_Pre_Type_Hos        "住院"
+    IDS_patient_sex_male    "男"
+    IDS_patient_sex_female  "女"
+    IDS_patient_sex_unknow  "未知"
+    IDS_SUCC                "操作成功！"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_StartFilling        "您确定开始加药?"
+    IDS_FinishFilling       "location添加[num].\n完成加药后值为[afterFill].\n\n正确请点击确认,否则请点取消后修改数值重新确认."
+    IDS_Pre_Med_exist       "此药品已经存在于本处方中，不可重复添加！"
+    IDS_Pre_ST_waitting     "等待发药"
+    IDS_Pre_ST_invalidated  "作废"
+    IDS_CHOOSE_ROW          "请勾选行"
+    IDS_errUserName         "请输入正确的登录名！"
+    IDS_errUserPsw          "用户密码错误！"
+    IDS_errUserIKey         "iKey匹配失败！"
+    IDS_errSecurity         " 安全校验失败！"
+    IDS_SwitchUser          "确定要切换用户吗？"
+    IDS_NoBind              "您插入的Key尚未绑定用户！"
+    IDS_erDate              "结束日期不能晚于开始日期！"
+    IDS_resetDefault        "默认设置"
+    IDS_resetConfirm        "确定恢复为默认设置?"
+    IDS_saveConfirm         "确定保存当前设置为默认设置？"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_noMed               "不能添加药品库中不存在的药品！"
+    IDS_erInt               "请输入大于0的整数!"
+    IDS_Pre_waittingOrInvalidated 
+                            "等待或作废状态的处方不能再进行手工发药，请重新选定处方。"
+    IDS_configEnd           "设置完成，所有设置重启软件后生效！"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\LKBSS.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

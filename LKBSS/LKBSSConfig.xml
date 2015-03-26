@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LK>
+	<!--Singlechip-->
+	<SinglechipPort>3</SinglechipPort>
+    <SinglechipbaudRate>57600</SinglechipbaudRate>
+    
+    <!--Database-->
+    <host>127.0.0.1</host>
+    <user>root</user>
+    <password>lkyf</password>
+    <db>lkyf</db>
+    <port>3306</port>
+    <characterSet>gbk</characterSet>
+
+	<!--ADODatabase-->
+	<!-- type: SQLSERVER or ORACLE-->
+	<DBType>ORACLE</DBType>
+	<server>KTHIS</server>
+	<data>yzyy</data>
+	<uid>outlink</uid>
+	<pwd>outlink</pwd>
+    
+    <!--Booking-->
+    <RunTime>1051200</RunTime>
+    <PrintCount>4562500</PrintCount>
+    <SatoPrintCount>4562500</SatoPrintCount>
+    <PackCount>4562500</PackCount>
+    <maintainRunTime>1</maintainRunTime>
+    <maintainPrintCount>1</maintainPrintCount>
+    <maintainSatoPrintCount>1</maintainSatoPrintCount>
+    <maintainPackCount>1</maintainPackCount>
+    
+    <!--Log-->
+    <logPropFile>log4cxx.properties</logPropFile>
+    
+    <!--SCAN-->
+    <DealFrequency>50</DealFrequency>
+    <MachineType>1002</MachineType>
+    <MachineID>1</MachineID>
+    <ValidateControl>1</ValidateControl>
+    
+    <DoseMonitorFrequency>2000</DoseMonitorFrequency>
+    <DeviceMonitorFrequency>6000</DeviceMonitorFrequency>
+    
+    <!--Setosk,0 close,1 open system osk ,2 open custom osk -->
+    <Openosk>2</Openosk>
+    
+    <!--runMode,0-normal, 1-no device, 2-no login, 9-no device and no login-->
+    <runMode>1</runMode>
+    
+    <!--CardReader-->
+    <cardReaderPort1>4</cardReaderPort1>
+    <cardReaderRate1>9600</cardReaderRate1>
+    <cardReaderPort2>6</cardReaderPort2>
+    <cardReaderRate2>9600</cardReaderRate2>
+        
+    <!--PLCPort-->
+    <PLCPort>2</PLCPort>
+        
+    <!--SplitMax,设置处方拆分数量-->
+    <SplitMax>2618000</SplitMax>
+	
+    <!--keepRec,1保持数据库中的工作队列表记录,0删除数据库中的工作队列表记录-->
+    <keepRec>1</keepRec>
+
+    <!--EnableFinishFlag,是否启用多处方结束标志-->
+    <EnableFinishFlag>0</EnableFinishFlag>
+
+	<BoxTime>600</BoxTime>
+
+	<MualAddMedUnit>2</MualAddMedUnit>
+
+	<!--BoxDatabase-->
+    <Boxhost>127.0.0.1</Boxhost>
+    <Boxuser>rdis</Boxuser>
+    <Boxpassword>rdis</Boxpassword>
+    <Boxdb>yz_t_i_rdis</Boxdb>
+    <Boxport>3306</Boxport>
+    <BoxcharacterSet>gbk</BoxcharacterSet>
+</LK>

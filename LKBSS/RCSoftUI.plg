@@ -1,0 +1,604 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: RCSoftUI - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/RCSoftUI.res" /d "_DEBUG" /d "_AFXDLL" "F:\RCSoft(B)\RCSoftUI.rc"" 
+Creating temporary file "C:\Users\jason\AppData\Local\Temp\RSPD84B.tmp" with contents
+[
+/nologo /MDd /W3 /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/RCSoftUI.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"F:\RCSoft(B)\RCSoftUI.cpp"
+"F:\RCSoft(B)\BitmapEdit.cpp"
+"F:\RCSoft(B)\BitmapSlider.cpp"
+"F:\RCSoft(B)\ImageTabWnd.cpp"
+"F:\RCSoft(B)\Keyboard.cpp"
+"F:\RCSoft(B)\MedBoxCtrl.cpp"
+"F:\RCSoft(B)\MenuBar.cpp"
+"F:\RCSoft(B)\RCButton.cpp"
+"F:\RCSoft(B)\RCDialog.cpp"
+"F:\RCSoft(B)\RCEdit.cpp"
+"F:\RCSoft(B)\RCList.cpp"
+"F:\RCSoft(B)\RCTreeCtrl.cpp"
+"F:\RCSoft(B)\ScrollHelper.cpp"
+"F:\RCSoft(B)\SkinHeaderCtrl.cpp"
+"F:\RCSoft(B)\SkinHorizontalScrollbar.cpp"
+"F:\RCSoft(B)\SkinListCtrl.cpp"
+"F:\RCSoft(B)\SkinVerticleScrollbar.cpp"
+"F:\RCSoft(B)\XPGroupBox.cpp"
+"F:\RCSoft(B)\Util.cpp"
+"F:\RCSoft(B)\DetailInfoPage.cpp"
+"F:\RCSoft(B)\DeviceMonitor.cpp"
+"F:\RCSoft(B)\DeviceMonitor1.cpp"
+"F:\RCSoft(B)\DoseMonitorPage.cpp"
+"F:\RCSoft(B)\DoseMonitorPage1.cpp"
+"F:\RCSoft(B)\DoseMonitorPage2.cpp"
+"F:\RCSoft(B)\DoseMonitorPage3.cpp"
+"F:\RCSoft(B)\DoseMonitorPage4.cpp"
+"F:\RCSoft(B)\DoseMonitorPage5.cpp"
+"F:\RCSoft(B)\DoseMonitorPage6.cpp"
+"F:\RCSoft(B)\DoseMonitorPage7.cpp"
+"F:\RCSoft(B)\DoseMonitorPage8.cpp"
+"F:\RCSoft(B)\RCSoftUIDlg.cpp"
+"F:\RCSoft(B)\ResumeBox.cpp"
+"F:\RCSoft(B)\WorkQueuePage.cpp"
+"F:\RCSoft(B)\BatImportInfo.cpp"
+"F:\RCSoft(B)\LoginDlg.cpp"
+"F:\RCSoft(B)\LogViewer.cpp"
+"F:\RCSoft(B)\RCMessageBox.cpp"
+"F:\RCSoft(B)\StatisticsInfo.cpp"
+"F:\RCSoft(B)\SystemConfig.cpp"
+"F:\RCSoft(B)\AddMedicineDlg.cpp"
+"F:\RCSoft(B)\AddMedInfoZonePage.cpp"
+"F:\RCSoft(B)\OPZonePage.cpp"
+"F:\RCSoft(B)\AddNewUser.cpp"
+"F:\RCSoft(B)\ModifyPWDlg.cpp"
+"F:\RCSoft(B)\ModifyUser.cpp"
+"F:\RCSoft(B)\UserManager.cpp"
+"F:\RCSoft(B)\MedAddrEditor.cpp"
+"F:\RCSoft(B)\MedicineInfo.cpp"
+"F:\RCSoft(B)\MedicineMgr.cpp"
+"F:\RCSoft(B)\MedLocationEditor.cpp"
+"F:\RCSoft(B)\AddPharmacy.cpp"
+"F:\RCSoft(B)\PrescriptInfo.cpp"
+"F:\RCSoft(B)\PrescriptInfoViewer.cpp"
+"F:\RCSoft(B)\QueryPrescript.cpp"
+"F:\RCSoft(B)\BIZ\BIZBaseService.cpp"
+"F:\RCSoft(B)\BIZ\BIZBoxService.cpp"
+"F:\RCSoft(B)\BIZ\BIZFillMedicine.cpp"
+"F:\RCSoft(B)\BIZ\MedicineManage.cpp"
+"F:\RCSoft(B)\BIZ\Monitor.cpp"
+"F:\RCSoft(B)\BIZ\PrescriptionManage.cpp"
+"F:\RCSoft(B)\BIZ\SysConfig.cpp"
+"F:\RCSoft(B)\BIZ\UserManage.cpp"
+"F:\RCSoft(B)\BIZ\Base64.cpp"
+"F:\RCSoft(B)\BIZ\ConfigUtil.cpp"
+"F:\RCSoft(B)\BIZ\DBManage.cpp"
+"F:\RCSoft(B)\BIZ\Des.cpp"
+"F:\RCSoft(B)\BIZ\Encrypt.cpp"
+"F:\RCSoft(B)\BIZ\excel9.cpp"
+"F:\RCSoft(B)\BIZ\Import.cpp"
+"F:\RCSoft(B)\BIZ\MD5.cpp"
+"F:\RCSoft(B)\BIZ\Ping.cpp"
+"F:\RCSoft(B)\BIZ\PLC.CPP"
+"F:\RCSoft(B)\BIZ\PLCMitsubishi.cpp"
+"F:\RCSoft(B)\BIZ\PortManage.cpp"
+"F:\RCSoft(B)\BIZ\SerialPort.cpp"
+"F:\RCSoft(B)\BIZ\ServerSocket.cpp"
+"F:\RCSoft(B)\BIZ\Statistic.cpp"
+"F:\RCSoft(B)\BIZ\SystemSecurity.cpp"
+"F:\RCSoft(B)\BIZ\ThermalPrinter.cpp"
+"F:\RCSoft(B)\BIZ\ThermalPrinterBeiyang.cpp"
+"F:\RCSoft(B)\BIZ\ThermalPrinterStar.cpp"
+"F:\RCSoft(B)\BIZ\tinystr.cpp"
+"F:\RCSoft(B)\BIZ\tinyxml.cpp"
+"F:\RCSoft(B)\BIZ\tinyxmlerror.cpp"
+"F:\RCSoft(B)\BIZ\tinyxmlparser.cpp"
+"F:\RCSoft(B)\BIZ\ttf2hex.cpp"
+"F:\RCSoft(B)\BIZ\utils.cpp"
+"F:\RCSoft(B)\BasicSetting.cpp"
+"F:\RCSoft(B)\DatabaseSetting.cpp"
+"F:\RCSoft(B)\PLCSetting.cpp"
+"F:\RCSoft(B)\PrinterSetting.cpp"
+"F:\RCSoft(B)\ResetDefaultSetting.cpp"
+"F:\RCSoft(B)\SysMonitorSetting.cpp"
+"F:\RCSoft(B)\SystemSetting.cpp"
+]
+Creating command line "cl.exe @C:\Users\jason\AppData\Local\Temp\RSPD84B.tmp" 
+Creating temporary file "C:\Users\jason\AppData\Local\Temp\RSPD84C.tmp" with contents
+[
+/nologo /MDd /W3 /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/RCSoftUI.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"F:\RCSoft(B)\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\jason\AppData\Local\Temp\RSPD84C.tmp" 
+Creating temporary file "C:\Users\jason\AppData\Local\Temp\RSPD84D.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/RCSoftUI.pdb" /debug /machine:I386 /out:"Debug/RCSoftUI.exe" /pdbtype:sept 
+".\Debug\RCSoftUI.obj"
+".\Debug\StdAfx.obj"
+".\Debug\BitmapEdit.obj"
+".\Debug\BitmapSlider.obj"
+".\Debug\ImageTabWnd.obj"
+".\Debug\Keyboard.obj"
+".\Debug\MedBoxCtrl.obj"
+".\Debug\MenuBar.obj"
+".\Debug\RCButton.obj"
+".\Debug\RCDialog.obj"
+".\Debug\RCEdit.obj"
+".\Debug\RCList.obj"
+".\Debug\RCTreeCtrl.obj"
+".\Debug\ScrollHelper.obj"
+".\Debug\SkinHeaderCtrl.obj"
+".\Debug\SkinHorizontalScrollbar.obj"
+".\Debug\SkinListCtrl.obj"
+".\Debug\SkinVerticleScrollbar.obj"
+".\Debug\XPGroupBox.obj"
+".\Debug\Util.obj"
+".\Debug\DetailInfoPage.obj"
+".\Debug\DeviceMonitor.obj"
+".\Debug\DeviceMonitor1.obj"
+".\Debug\DoseMonitorPage.obj"
+".\Debug\DoseMonitorPage1.obj"
+".\Debug\DoseMonitorPage2.obj"
+".\Debug\DoseMonitorPage3.obj"
+".\Debug\DoseMonitorPage4.obj"
+".\Debug\DoseMonitorPage5.obj"
+".\Debug\DoseMonitorPage6.obj"
+".\Debug\DoseMonitorPage7.obj"
+".\Debug\DoseMonitorPage8.obj"
+".\Debug\RCSoftUIDlg.obj"
+".\Debug\ResumeBox.obj"
+".\Debug\WorkQueuePage.obj"
+".\Debug\BatImportInfo.obj"
+".\Debug\LoginDlg.obj"
+".\Debug\LogViewer.obj"
+".\Debug\RCMessageBox.obj"
+".\Debug\StatisticsInfo.obj"
+".\Debug\SystemConfig.obj"
+".\Debug\AddMedicineDlg.obj"
+".\Debug\AddMedInfoZonePage.obj"
+".\Debug\OPZonePage.obj"
+".\Debug\AddNewUser.obj"
+".\Debug\ModifyPWDlg.obj"
+".\Debug\ModifyUser.obj"
+".\Debug\UserManager.obj"
+".\Debug\MedAddrEditor.obj"
+".\Debug\MedicineInfo.obj"
+".\Debug\MedicineMgr.obj"
+".\Debug\MedLocationEditor.obj"
+".\Debug\AddPharmacy.obj"
+".\Debug\PrescriptInfo.obj"
+".\Debug\PrescriptInfoViewer.obj"
+".\Debug\QueryPrescript.obj"
+".\Debug\BIZBaseService.obj"
+".\Debug\BIZBoxService.obj"
+".\Debug\BIZFillMedicine.obj"
+".\Debug\MedicineManage.obj"
+".\Debug\Monitor.obj"
+".\Debug\PrescriptionManage.obj"
+".\Debug\SysConfig.obj"
+".\Debug\UserManage.obj"
+".\Debug\Base64.obj"
+".\Debug\ConfigUtil.obj"
+".\Debug\DBManage.obj"
+".\Debug\Des.obj"
+".\Debug\Encrypt.obj"
+".\Debug\excel9.obj"
+".\Debug\Import.obj"
+".\Debug\MD5.obj"
+".\Debug\Ping.obj"
+".\Debug\PLC.OBJ"
+".\Debug\PLCMitsubishi.obj"
+".\Debug\PortManage.obj"
+".\Debug\SerialPort.obj"
+".\Debug\ServerSocket.obj"
+".\Debug\Statistic.obj"
+".\Debug\SystemSecurity.obj"
+".\Debug\ThermalPrinter.obj"
+".\Debug\ThermalPrinterBeiyang.obj"
+".\Debug\ThermalPrinterStar.obj"
+".\Debug\tinystr.obj"
+".\Debug\tinyxml.obj"
+".\Debug\tinyxmlerror.obj"
+".\Debug\tinyxmlparser.obj"
+".\Debug\ttf2hex.obj"
+".\Debug\utils.obj"
+".\Debug\BasicSetting.obj"
+".\Debug\DatabaseSetting.obj"
+".\Debug\PLCSetting.obj"
+".\Debug\PrinterSetting.obj"
+".\Debug\ResetDefaultSetting.obj"
+".\Debug\SysMonitorSetting.obj"
+".\Debug\SystemSetting.obj"
+".\Debug\RCSoftUI.res"
+".\log4cxx.lib"
+]
+Creating command line "link.exe @C:\Users\jason\AppData\Local\Temp\RSPD84D.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+RCSoftUI.cpp
+BitmapEdit.cpp
+BitmapSlider.cpp
+ImageTabWnd.cpp
+Keyboard.cpp
+MedBoxCtrl.cpp
+MenuBar.cpp
+RCButton.cpp
+RCDialog.cpp
+RCEdit.cpp
+RCList.cpp
+RCTreeCtrl.cpp
+ScrollHelper.cpp
+SkinHeaderCtrl.cpp
+SkinHorizontalScrollbar.cpp
+SkinListCtrl.cpp
+SkinVerticleScrollbar.cpp
+XPGroupBox.cpp
+Util.cpp
+DetailInfoPage.cpp
+Generating Code...
+Compiling...
+DeviceMonitor.cpp
+DeviceMonitor1.cpp
+DoseMonitorPage.cpp
+DoseMonitorPage1.cpp
+DoseMonitorPage2.cpp
+DoseMonitorPage3.cpp
+DoseMonitorPage4.cpp
+DoseMonitorPage5.cpp
+DoseMonitorPage6.cpp
+DoseMonitorPage7.cpp
+DoseMonitorPage8.cpp
+RCSoftUIDlg.cpp
+ResumeBox.cpp
+WorkQueuePage.cpp
+BatImportInfo.cpp
+LoginDlg.cpp
+LogViewer.cpp
+RCMessageBox.cpp
+StatisticsInfo.cpp
+SystemConfig.cpp
+Generating Code...
+Compiling...
+AddMedicineDlg.cpp
+AddMedInfoZonePage.cpp
+OPZonePage.cpp
+AddNewUser.cpp
+ModifyPWDlg.cpp
+ModifyUser.cpp
+UserManager.cpp
+MedAddrEditor.cpp
+MedicineInfo.cpp
+MedicineMgr.cpp
+MedLocationEditor.cpp
+AddPharmacy.cpp
+PrescriptInfo.cpp
+PrescriptInfoViewer.cpp
+QueryPrescript.cpp
+BIZBaseService.cpp
+f:\rcsoft(b)\include\log4cxx\logger.h(44) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(46) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(51) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(52) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(52) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(1720) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(1720) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+BIZBoxService.cpp
+f:\rcsoft(b)\include\log4cxx\logger.h(44) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(46) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(51) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(52) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(52) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(1720) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(1720) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+BIZFillMedicine.cpp
+f:\rcsoft(b)\include\log4cxx\logger.h(44) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(46) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(51) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(52) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(52) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(1720) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(1720) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+c:\program files\microsoft visual studio\vc98\include\list(68) : warning C4284: return type for 'std::list<int,class std::allocator<int> >::const_iterator::operator ->' is 'const int *' (ie; not a UDT or reference to a UDT.  Will produce errors if applied using infix notation)
+        f:\rcsoft(b)\biz\medicinemanage.h(238) : see reference to class template instantiation 'std::list<int,class std::allocator<int> >' being compiled
+c:\program files\microsoft visual studio\vc98\include\list(103) : warning C4284: return type for 'std::list<int,class std::allocator<int> >::iterator::operator ->' is 'int *' (ie; not a UDT or reference to a UDT.  Will produce errors if applied using infix notation)
+        f:\rcsoft(b)\biz\medicinemanage.h(238) : see reference to class template instantiation 'std::list<int,class std::allocator<int> >' being compiled
+F:\RCSoft(B)\BIZ\BIZFillMedicine.cpp(176) : warning C4018: '>=' : signed/unsigned mismatch
+c:\program files\microsoft visual studio\vc98\include\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        c:\program files\microsoft visual studio\vc98\include\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::insert(unsigned int *,unsigned int,const unsigned int &)'
+c:\program files\microsoft visual studio\vc98\include\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        c:\program files\microsoft visual studio\vc98\include\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::insert(unsigned int *,unsigned int,const unsigned int &)'
+c:\program files\microsoft visual studio\vc98\include\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        c:\program files\microsoft visual studio\vc98\include\vector(156) : while compiling class-template member function 'void __thiscall std::vector<struct _FillStruct,class std::allocator<struct _FillStruct> >::insert(struct _FillStruct *,unsigned int,const struct _FillStruct &)'
+c:\program files\microsoft visual studio\vc98\include\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        c:\program files\microsoft visual studio\vc98\include\vector(156) : while compiling class-template member function 'void __thiscall std::vector<struct _FillStruct,class std::allocator<struct _FillStruct> >::insert(struct _FillStruct *,unsigned int,const struct _FillStruct &)'
+MedicineManage.cpp
+f:\rcsoft(b)\include\log4cxx\logger.h(44) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(46) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(51) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(52) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(52) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(1720) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(1720) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+Monitor.cpp
+f:\rcsoft(b)\include\log4cxx\logger.h(44) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(46) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(51) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(52) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(52) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(1720) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(1720) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+Generating Code...
+F:\RCSoft(B)\BIZ\BIZBoxService.cpp(202) : warning C4715: 'CBIZBoxService::distributing' : not all control paths return a value
+Compiling...
+PrescriptionManage.cpp
+SysConfig.cpp
+UserManage.cpp
+F:\RCSoft(B)\BIZ\UserManage.cpp(191) : warning C4101: 'pEx' : unreferenced local variable
+Base64.cpp
+ConfigUtil.cpp
+DBManage.cpp
+Des.cpp
+F:\RCSoft(B)\BIZ\Des.cpp(194) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+F:\RCSoft(B)\BIZ\Des.cpp(195) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+F:\RCSoft(B)\BIZ\Des.cpp(196) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+F:\RCSoft(B)\BIZ\Des.cpp(197) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+F:\RCSoft(B)\BIZ\Des.cpp(198) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+F:\RCSoft(B)\BIZ\Des.cpp(199) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+F:\RCSoft(B)\BIZ\Des.cpp(200) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+F:\RCSoft(B)\BIZ\Des.cpp(201) : warning C4244: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+Encrypt.cpp
+excel9.cpp
+Import.cpp
+f:\rcsoft(b)\include\log4cxx\logger.h(44) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(46) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(51) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(52) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(52) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(1720) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(1720) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+F:\RCSoft(B)\BIZ\Import.cpp(357) : warning C4018: '!=' : signed/unsigned mismatch
+F:\RCSoft(B)\BIZ\Import.cpp(422) : warning C4018: '<' : signed/unsigned mismatch
+c:\program files\microsoft visual studio\vc98\include\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        c:\program files\microsoft visual studio\vc98\include\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::insert(unsigned int *,unsigned int,const unsigned int &)'
+c:\program files\microsoft visual studio\vc98\include\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        c:\program files\microsoft visual studio\vc98\include\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::insert(unsigned int *,unsigned int,const unsigned int &)'
+MD5.cpp
+Ping.cpp
+F:\RCSoft(B)\BIZ\Ping.cpp(80) : warning C4101: 'pHost' : unreferenced local variable
+PLC.CPP
+f:\rcsoft(b)\include\log4cxx\logger.h(44) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(46) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(51) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(52) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(52) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(1720) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(1720) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+F:\RCSoft(B)\BIZ\PLC.CPP(852) : warning C4101: 'Exception' : unreferenced local variable
+F:\RCSoft(B)\BIZ\PLC.CPP(1405) : warning C4305: 'return' : truncation from 'const int' to 'bool'
+PLCMitsubishi.cpp
+f:\rcsoft(b)\include\log4cxx\logger.h(44) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(46) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(51) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(52) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(52) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(1720) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(1720) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+F:\RCSoft(B)\BIZ\PLCMitsubishi.cpp(232) : warning C4101: 'Exception' : unreferenced local variable
+F:\RCSoft(B)\BIZ\PLCMitsubishi.cpp(315) : warning C4101: 'Exception' : unreferenced local variable
+F:\RCSoft(B)\BIZ\PLCMitsubishi.cpp(374) : warning C4101: 'Exception' : unreferenced local variable
+F:\RCSoft(B)\BIZ\PLCMitsubishi.cpp(434) : warning C4101: 'Exception' : unreferenced local variable
+c:\program files\microsoft visual studio\vc98\include\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        c:\program files\microsoft visual studio\vc98\include\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::insert(unsigned int *,unsigned int,const unsigned int &)'
+c:\program files\microsoft visual studio\vc98\include\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        c:\program files\microsoft visual studio\vc98\include\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::insert(unsigned int *,unsigned int,const unsigned int &)'
+PortManage.cpp
+f:\rcsoft(b)\include\log4cxx\logger.h(44) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(46) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(51) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(52) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(52) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(1720) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(1720) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+c:\program files\microsoft visual studio\vc98\include\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        c:\program files\microsoft visual studio\vc98\include\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::insert(unsigned int *,unsigned int,const unsigned int &)'
+c:\program files\microsoft visual studio\vc98\include\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        c:\program files\microsoft visual studio\vc98\include\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::insert(unsigned int *,unsigned int,const unsigned int &)'
+SerialPort.cpp
+ServerSocket.cpp
+f:\rcsoft(b)\include\log4cxx\logger.h(44) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(46) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(51) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(52) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(52) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(1720) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(1720) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+Statistic.cpp
+f:\rcsoft(b)\include\log4cxx\logger.h(44) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(46) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(51) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(52) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(52) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(1720) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(1720) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+SystemSecurity.cpp
+f:\rcsoft(b)\include\log4cxx\logger.h(44) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(46) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(51) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(52) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(52) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(1720) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(1720) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+ThermalPrinter.cpp
+f:\rcsoft(b)\include\log4cxx\logger.h(44) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(46) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(51) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(52) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(52) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(1720) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(1720) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+Generating Code...
+Compiling...
+ThermalPrinterBeiyang.cpp
+f:\rcsoft(b)\include\log4cxx\logger.h(44) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(46) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(51) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(52) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(52) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(1720) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(1720) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+c:\program files\microsoft visual studio\vc98\include\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        c:\program files\microsoft visual studio\vc98\include\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::insert(unsigned int *,unsigned int,const unsigned int &)'
+c:\program files\microsoft visual studio\vc98\include\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        c:\program files\microsoft visual studio\vc98\include\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::insert(unsigned int *,unsigned int,const unsigned int &)'
+ThermalPrinterStar.cpp
+f:\rcsoft(b)\include\log4cxx\logger.h(44) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(46) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(51) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(52) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(52) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(1720) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(1720) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+c:\program files\microsoft visual studio\vc98\include\vector(156) : warning C4018: '<' : signed/unsigned mismatch
+        c:\program files\microsoft visual studio\vc98\include\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::insert(unsigned int *,unsigned int,const unsigned int &)'
+c:\program files\microsoft visual studio\vc98\include\vector(167) : warning C4018: '<' : signed/unsigned mismatch
+        c:\program files\microsoft visual studio\vc98\include\vector(156) : while compiling class-template member function 'void __thiscall std::vector<unsigned int,class std::allocator<unsigned int> >::insert(unsigned int *,unsigned int,const unsigned int &)'
+tinystr.cpp
+tinyxml.cpp
+tinyxmlerror.cpp
+tinyxmlparser.cpp
+ttf2hex.cpp
+utils.cpp
+f:\rcsoft(b)\include\log4cxx\logger.h(44) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(46) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(51) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(52) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(52) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(1720) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+f:\rcsoft(b)\include\log4cxx\logger.h(1720) : warning C4231: nonstandard extension used : 'extern' before template explicit instantiation
+BasicSetting.cpp
+DatabaseSetting.cpp
+PLCSetting.cpp
+PrinterSetting.cpp
+ResetDefaultSetting.cpp
+SysMonitorSetting.cpp
+SystemSetting.cpp
+Generating Code...
+Linking...
+LINK : warning LNK4098: defaultlib "LIBCMT.LIB" conflicts with use of other libs; use /NODEFAULTLIB:library
+msvcrtd.lib(cinitexe.obj) : warning LNK4098: defaultlib "msvcrt.lib" conflicts with use of other libs; use /NODEFAULTLIB:library
+Creating temporary file "C:\Users\jason\AppData\Local\Temp\RSP4ACE.tmp" with contents
+[
+/nologo /o"Debug/RCSoftUI.bsc" 
+".\Debug\StdAfx.sbr"
+".\Debug\RCSoftUI.sbr"
+".\Debug\BitmapEdit.sbr"
+".\Debug\BitmapSlider.sbr"
+".\Debug\ImageTabWnd.sbr"
+".\Debug\Keyboard.sbr"
+".\Debug\MedBoxCtrl.sbr"
+".\Debug\MenuBar.sbr"
+".\Debug\RCButton.sbr"
+".\Debug\RCDialog.sbr"
+".\Debug\RCEdit.sbr"
+".\Debug\RCList.sbr"
+".\Debug\RCTreeCtrl.sbr"
+".\Debug\ScrollHelper.sbr"
+".\Debug\SkinHeaderCtrl.sbr"
+".\Debug\SkinHorizontalScrollbar.sbr"
+".\Debug\SkinListCtrl.sbr"
+".\Debug\SkinVerticleScrollbar.sbr"
+".\Debug\XPGroupBox.sbr"
+".\Debug\Util.sbr"
+".\Debug\DetailInfoPage.sbr"
+".\Debug\DeviceMonitor.sbr"
+".\Debug\DeviceMonitor1.sbr"
+".\Debug\DoseMonitorPage.sbr"
+".\Debug\DoseMonitorPage1.sbr"
+".\Debug\DoseMonitorPage2.sbr"
+".\Debug\DoseMonitorPage3.sbr"
+".\Debug\DoseMonitorPage4.sbr"
+".\Debug\DoseMonitorPage5.sbr"
+".\Debug\DoseMonitorPage6.sbr"
+".\Debug\DoseMonitorPage7.sbr"
+".\Debug\DoseMonitorPage8.sbr"
+".\Debug\RCSoftUIDlg.sbr"
+".\Debug\ResumeBox.sbr"
+".\Debug\WorkQueuePage.sbr"
+".\Debug\BatImportInfo.sbr"
+".\Debug\LoginDlg.sbr"
+".\Debug\LogViewer.sbr"
+".\Debug\RCMessageBox.sbr"
+".\Debug\StatisticsInfo.sbr"
+".\Debug\SystemConfig.sbr"
+".\Debug\AddMedicineDlg.sbr"
+".\Debug\AddMedInfoZonePage.sbr"
+".\Debug\OPZonePage.sbr"
+".\Debug\AddNewUser.sbr"
+".\Debug\ModifyPWDlg.sbr"
+".\Debug\ModifyUser.sbr"
+".\Debug\UserManager.sbr"
+".\Debug\MedAddrEditor.sbr"
+".\Debug\MedicineInfo.sbr"
+".\Debug\MedicineMgr.sbr"
+".\Debug\MedLocationEditor.sbr"
+".\Debug\AddPharmacy.sbr"
+".\Debug\PrescriptInfo.sbr"
+".\Debug\PrescriptInfoViewer.sbr"
+".\Debug\QueryPrescript.sbr"
+".\Debug\BIZBaseService.sbr"
+".\Debug\BIZBoxService.sbr"
+".\Debug\BIZFillMedicine.sbr"
+".\Debug\MedicineManage.sbr"
+".\Debug\Monitor.sbr"
+".\Debug\PrescriptionManage.sbr"
+".\Debug\SysConfig.sbr"
+".\Debug\UserManage.sbr"
+".\Debug\Base64.sbr"
+".\Debug\ConfigUtil.sbr"
+".\Debug\DBManage.sbr"
+".\Debug\Des.sbr"
+".\Debug\Encrypt.sbr"
+".\Debug\excel9.sbr"
+".\Debug\Import.sbr"
+".\Debug\MD5.sbr"
+".\Debug\Ping.sbr"
+".\Debug\PLC.SBR"
+".\Debug\PLCMitsubishi.sbr"
+".\Debug\PortManage.sbr"
+".\Debug\SerialPort.sbr"
+".\Debug\ServerSocket.sbr"
+".\Debug\Statistic.sbr"
+".\Debug\SystemSecurity.sbr"
+".\Debug\ThermalPrinter.sbr"
+".\Debug\ThermalPrinterBeiyang.sbr"
+".\Debug\ThermalPrinterStar.sbr"
+".\Debug\tinystr.sbr"
+".\Debug\tinyxml.sbr"
+".\Debug\tinyxmlerror.sbr"
+".\Debug\tinyxmlparser.sbr"
+".\Debug\ttf2hex.sbr"
+".\Debug\utils.sbr"
+".\Debug\BasicSetting.sbr"
+".\Debug\DatabaseSetting.sbr"
+".\Debug\PLCSetting.sbr"
+".\Debug\PrinterSetting.sbr"
+".\Debug\ResetDefaultSetting.sbr"
+".\Debug\SysMonitorSetting.sbr"
+".\Debug\SystemSetting.sbr"]
+Creating command line "bscmake.exe @C:\Users\jason\AppData\Local\Temp\RSP4ACE.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+RCSoftUI.exe - 0 error(s), 150 warning(s)
+</pre>
+</body>
+</html>
